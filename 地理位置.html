@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>我的家乡</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/bottom.css">
+		<script src="http://api.map.baidu.com/api?type=webgl&v=1.0&ak=bZeLerKpVCOT5hAQfMjy40pCuI0fiYLS"></script>
+	</head>
+	<body>
+		<div class="nav nav_other">
+			<a href="首页.html">
+				<p id="flag1">首页</p>
+			</a>
+			<a href="民俗文化.html">
+				<p class="button">民俗文化</p>
+			</a>
+			<a href="风景名胜.html">
+				<p class="button">风景名胜</p>
+			</a>
+			<a href="特产美食.html">
+				<p class="button">特产美食</p>
+			</a>
+			<a href="教育.html">
+				<p class="button">教育</p>
+			</a>
+			<a href="地理位置.html">
+				<p class="button">
+					<h3>
+						<font color="black">地理位置</font>
+					</h3>
+				</p>
+			</a>
+			<a href=""><div class="clock">
+			    <p id="1">0</p>
+			    <p id="2">0</p>
+			    <p id="3">:</p>
+			    <p id="4">0</p>
+			    <p id="5">0</p>
+			    <p id="6">:</p>
+			    <p id="7">0</p>
+			    <p id="8">0</p>
+			</div></a>
+		</div>
+
+		<!-- 导航栏 -->
+		<!-- <div class="side_nav other">
+				<div class="last"><a href="#"><img src="img/go-top.png" alt=""></a></div>
+			</div> -->
+
+		<div class="main">
+			<div id="yy">
+
+				<div class="part2">
+					<div id="first">
+						<div id="one">
+							<h1 id="flag5">
+								达州
+							</h1>
+						</div>
+						<div id="two">
+							<hr>
+						</div>
+					</div>
+					<div id="second">
+						<font face="华文楷体">
+							<p id="pg2">
+								达州市位于四川省东北部，大巴山南麓。地理坐标为北纬30°92′-32°20′，东经103°29′-108°23′。北接陕西安康和湖北十堰，南与广安市接壤，东、东南与重庆市万州区城口县、开县及重庆市梁平县、垫江县相邻，西抵巴中市和南充市。总面积16591平方千米。总人口637万人。
+							</p>
+						</font>
+
+					</div>
+					<div class="map">
+						<div id="container"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+
+<script type="text/javascript">
+	var map = new BMapGL.Map('container'); // 创建Map实例
+	map.centerAndZoom('达州市', 13); // 初始化地图,设置中心点坐标和地图级别
+	map.enableScrollWheelZoom(true); // 开启鼠标滚轮缩放
+	function myTime(){
+		let time=new Date();
+		let hh=time.getHours();  //时
+		let mm=time.getMinutes();  //分
+		let ss=time.getSeconds();  //秒
+		// Math.floor() 向下取整
+		document.getElementById("1").innerText=Math.floor(hh/10);
+		document.getElementById("2").innerText=hh%10;
+		document.getElementById("4").innerText=Math.floor(mm/10);
+		document.getElementById("5").innerText=mm%10;
+		document.getElementById("7").innerText=Math.floor(ss/10);
+		document.getElementById("8").innerText=ss%10;
+	}
+	// 一秒执行一次
+	setInterval(myTime,1000);
+</script>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的家乡</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/bottom.css">
+	</head>
+	<body>
+
+		<div class="nav nav_other">
+			<a href="首页.html">
+				<p id="flag1">首页</p>
+			</a>
+			<a href="民俗文化.html">
+				<p class="button">
+					<h3>
+						<font color="black">民俗文化</font>
+					</h3>
+				</p>
+			</a>
+			<a href="风景名胜.html">
+				<p class="button">风景名胜</p>
+			</a>
+			<a href="特产美食.html">
+				<p class="button">特产美食</p>
+			</a>
+			<a href="教育.html">
+				<p class="button">教育</p>
+			</a>
+			<a href="地理位置.html">
+				<p class="button">地理位置</p>
+			</a>
+			<a href=""><div class="clock">
+			    <p id="1">0</p>
+			    <p id="2">0</p>
+			    <p id="3">:</p>
+			    <p id="4">0</p>
+			    <p id="5">0</p>
+			    <p id="6">:</p>
+			    <p id="7">0</p>
+			    <p id="8">0</p>
+			</div></a>
+		</div>
+
+		<!-- 导航栏 -->
+		<div class="side_nav other">
+			<div class="last"><a href="#"><img src="img/go-top.png" alt=""></a></div>
+			<div class="last2"><a href="#color"><img src="img/go_bottom.png" alt=""></a></div>
+		</div>
+
+		<div class="bigbox"></div>
+
+		<div class="main">
+			<div id="yy">
+
+				<div class="part2">
+					<div id="first">
+						<div id="three">
+							<h1 id="flag2">
+								民俗文化
+							</h1>
+						</div>
+						<div id="four">
+							<hr>
+						</div>
+					</div>
+
+					<div id="tab">
+						<h3>元九登高</h3>
+					</div>
+					<div id="second">
+						<font face="华文楷体">
+							<p id="pg">
+								达州元九登高节这一传统已沿袭千年，每年正月初九，数十万人倾城出游，这一壮观景象在全国也属罕见。相传公元815年，元稹（779年～831年，唐代诗人，世称元九）贬谪通州（今达州）任司马，初到任时，通州：“人稀地僻、蛇虫当道”，元稹励精图治，清正廉洁，政绩斐然，为当地百姓干了不少好事。公元818年，元稹调任河南，民众便于正月初九元稹离任当天，全城父老登上城南翠屏山和城北凤凰山，万民送别，依依不舍。达州从此留下了“元九”登高的传统习俗。当代达州籍著名诗人梁上泉有这样的诗句：达州原是古通州，山自青青水自流；元九登高怀元九，诗魂常伴凤凰游。
+							</p>
+						</font>
+					</div>
+					<div id="tab">
+						<h3>石桥火龙</h3>
+					</div>
+					<div id="second">
+						<font face="华文楷体">
+							<p id="pg">
+								达州石桥火龙闹春已延续千年。整个活动贯穿了请龙、龙点睛、龙请水、烧火龙、送龙等民俗风情，祈求新年风调雨顺、五谷丰登。特别是到了元宵节晚上，数条火龙游街走巷穿梭，居民家家用硝磺、柴碳等原料配制成烟花，尽情地对火龙燃放，使之火花四溅，让人喝彩不已。火龙用竹篾做成龙的躯体，再裱上白纸，涂上颜色，绘上鳞、角、爪，龙首、龙尾长达数十米，浑然一体。然后用硫磺、白硝、木炭制成的火药，做成“土火箭”，还有吐珠、转花、大犁等不同式样的烟花，安装在龙的全身。一条火龙由十来个赤膊青年手擎，加上鼓乐手、擎鳖鱼、小龙虾、鳖、金鱼等人，队伍达几十人。
+							</p>
+						</font>
+					</div>
+					<div id="tab">
+						<h3>文化古迹</h3>
+						<div class="tab_left">
+							<ul>
+								<li>通川桥</li>
+								<li>龙爪塔</li>
+								<li>戛云亭</li>
+								<li>高拱桥</li>
+								<li>賨人谷</li>
+								<li>渠县汉阙</li>
+								<li>礼义城遗址</li>
+							</ul>
+						</div>
+						<div class="tab_right">
+							<ul>
+								<li>城坝遗址</li>
+								<li>张爱萍故居</li>
+								<li>西圣寺</li>
+								<li>瓷碗铺窑址</li>
+								<li>列宁街</li>
+								<li>达州基督教堂</li>
+								<li>文笔塔</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div id="color">
+<span>制作：21级计应0035-----Levi</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	    function myTime(){
+	        let time=new Date();
+	        let hh=time.getHours();  //时
+	        let mm=time.getMinutes();  //分
+	        let ss=time.getSeconds();  //秒
+	        // Math.floor() 向下取整
+	        document.getElementById("1").innerText=Math.floor(hh/10);
+	        document.getElementById("2").innerText=hh%10;
+	        document.getElementById("4").innerText=Math.floor(mm/10);
+	        document.getElementById("5").innerText=mm%10;
+	        document.getElementById("7").innerText=Math.floor(ss/10);
+	        document.getElementById("8").innerText=ss%10;
+	    }
+	    // 一秒执行一次
+	    setInterval(myTime,1000);
+	</script>

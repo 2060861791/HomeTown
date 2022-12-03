@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<title>我的家乡</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/bottom.css">
+		<link rel="stylesheet" href="css/card.css">
+	</head>
+	<body>
+		<div class="nav nav_other">
+			<a href="首页.html">
+				<p id="flag1">首页</p>
+			</a>
+			<a href="民俗文化.html">
+				<p class="button">民俗文化</p>
+			</a>
+			<a href="风景名胜.html">
+				<p class="button">风景名胜</p>
+			</a>
+			<a href="特产美食.html">
+				<p class="button">特产美食</p>
+			</a>
+			<a href="教育.html">
+				<p class="button"><h3><font color="black">教育</font></h3></p>
+			</a>
+			<a href="地理位置.html">
+				<p class="button">地理位置</p>
+			</a>
+			<a href=""><div class="clock">
+			    <p id="1">0</p>
+			    <p id="2">0</p>
+			    <p id="3">:</p>
+			    <p id="4">0</p>
+			    <p id="5">0</p>
+			    <p id="6">:</p>
+			    <p id="7">0</p>
+			    <p id="8">0</p>
+			</div></a>
+		</div>
+
+		<!-- 导航栏 -->
+		<div class="side_nav other">
+			<div class="last"><a href="#"><img src="img/go-top.png" alt=""></a></div>
+			<div class="last2"><a href="#color"><img src="img/go_bottom.png" alt=""></a></div>
+		</div>
+
+		<div class="bigbox"></div>
+
+		<div class="main">
+			
+			<div id="yy">
+			
+				<div class="part2">
+					<div id="first">
+						<div id="one">
+							<h1 id="flag5">
+								教育
+							</h1>
+						</div>
+						<div id="two">
+							<hr>
+						</div>
+					</div>
+					
+					<div id="second">
+						<font face="华文楷体">
+							<div id="pg3">
+								<p >
+									2019年，达州市共有各类学校1455所。其中小学283所，普通中学397所，普通高等学校2所，中等职业教育学校33所，成人高等学校1所。全市共有专任教师53775人，其中小学25989人，普通中学22646人，中等职业教育学校3340人，普通高等学校1417人，成人高等学校236人。
+								
+								<p >全年各类学校招生21.68万人，在校生99.80万人，毕业生21.37万人；小学招生5.99万人，在校生38.72万人，毕业生7.14万人；普通中学招生11.44万人，在校生33.66万人，毕业生 10.70万人；中等职业教育学校招生2.76万人，在校生6.09万人，毕业生2.61万人；普通高等学校招生11523人，在校生31778人，毕业生6966人。成人高等学校招生3250人，在校生9354人，毕业生2148人。幼儿园733所，在园儿童17.14万人，学龄儿童入学率100%。</p></p>
+							</div>
+						</font>
+					</div>
+					
+					<div id="bigdiv">
+						<span id="biaoti">
+							高等院校
+						</span>
+						<div class="card">
+						    <div class="photo"><img src="img/wenli.jpg" alt=""></div>
+						    <h1>四川文理学院</h1>
+						    <h2>Sichuan University of Arts and Science</h2>
+						    <p><h3>校训:</h3>
+博文大理 厚德笃行</p>
+						    <a href="https://www.sasu.edu.cn/">了解更多</a>
+						</div>
+						<div class="card" id="mid">
+						    <div class="photo"><img src="img/达州中医药职业学院.png" alt=""></div>
+						    <h1>达州中医药职业学院</h1>
+						    <h2>Dazhou Vocational College of Chinese Medicine</h2>
+						    <p><h3 >校训:</h3>明德 正道 勤求 笃行</p>
+						    <a  id="ljgd" href="http://dzcmc.com/index.php">了解更多</a>
+						</div>
+						<div class="card">
+						    <div class="photo"><img src="img/达职院.jpeg" alt=""></div>
+						    <h1>达州职业技术学院</h1>
+						    <h2>Dazhou Vocational and Technical College</h2>
+						    <p><h3>校训</h3>立德 敬业 勤学 善作</p>
+						    <a href="http://www.dzvtc.edu.cn/">了解更多</a>
+						</div>
+					</div>
+					
+				</div>
+			
+			</div>
+
+			<div class="footer">
+				<div id="color">
+					<span>制作：21级计应0035-----Levi</span>
+				</div>
+			</div>
+			</div>
+	</body>
+</html>
+<script type="text/javascript">
+	    function myTime(){
+	        let time=new Date();
+	        let hh=time.getHours();  //时
+	        let mm=time.getMinutes();  //分
+	        let ss=time.getSeconds();  //秒
+	        // Math.floor() 向下取整
+	        document.getElementById("1").innerText=Math.floor(hh/10);
+	        document.getElementById("2").innerText=hh%10;
+	        document.getElementById("4").innerText=Math.floor(mm/10);
+	        document.getElementById("5").innerText=mm%10;
+	        document.getElementById("7").innerText=Math.floor(ss/10);
+	        document.getElementById("8").innerText=ss%10;
+	    }
+	    // 一秒执行一次
+	    setInterval(myTime,1000);
+	</script>

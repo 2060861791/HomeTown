@@ -1,0 +1,23 @@
+*{
+    /* 初始化 取消页面的内外边距 */
+    margin: 0;
+    padding: 0;
+}
+#color{
+	color: white;
+	height:60px;
+	background-color: white;
+	text-align: center;
+	color: rgba(157, 157, 0, 1.0);
+	line-height: 60px;
+	
+}
+#color span {
+	width: 51%;
+	margin: auto;
+	display: block;
+	font-size: 22px;
+}
+#color span:hover {
+	/* transform: scale(1.09); */
+}
